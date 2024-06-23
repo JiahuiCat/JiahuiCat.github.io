@@ -10,6 +10,8 @@ tags:
 ---
 
 > Microsoft 365与Exchange邮箱之间共存架构
+##
+![alt](img/home-bg.jpg)
 
 ## 名词解释
 
