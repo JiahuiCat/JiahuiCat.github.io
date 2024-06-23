@@ -11,7 +11,7 @@ tags:
 
 > Microsoft 365与Exchange邮箱之间共存架构
 ##
-!(img/20240623-Microsoft 365架构.png)
+![img/20240623-Microsoft 365架构.png](img/20240623-Microsoft 365架构.png)
 
 ## 名词解释
 
