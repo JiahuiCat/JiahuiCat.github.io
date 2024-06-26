@@ -1,6 +1,7 @@
 ---
 layout:       post
 title:        "Microsoft 365与Exchange邮箱之间互通架构图"
+date:         2024-06-26
 author:       "Hy.alva"
 header-style: text
 catalog:      true
