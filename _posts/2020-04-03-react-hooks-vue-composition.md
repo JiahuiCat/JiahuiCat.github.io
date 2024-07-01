@@ -2,7 +2,7 @@
 layout: post
 title: "提高数据存储的性能，可靠性和可扩展性-增加备用光纤存储器"
 date:         2024-07-01
-subtitle: "将光纤存取器集成到网络中"
+subtitle: "光纤存储器集成网络中"
 author: "Hy.Alva"
 header-style: text
 tags:
