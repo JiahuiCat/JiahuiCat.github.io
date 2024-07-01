@@ -1,16 +1,19 @@
 ---
 layout: post
-title: "React Hooks 是否可以改为用类似 Vue 3 Composition API 的方式实现？"
-subtitle: "Thinking in React vs. Thinking in Vue"
-author: "Hux"
+title: "提高数据存储的性能，可靠性和可扩展性-增加备用光纤存储器"
+date:         2024-07-01
+subtitle: "将光纤存取器集成到网络中"
+author: "Hy.Alva"
 header-style: text
 tags:
   - 知乎
-  - Web
-  - React
+  - 服务器虚拟化系统存储设备
+  - 光纤存储器
+  - 冗余
+  - 高可靠性
 ---
 
-> 这篇文章转载自[我在知乎上的回答](https://www.zhihu.com/question/378861485/answer/1125724740)
+> 部分内容转自ChatGPT
 
 
 **不能，因为是很不一样的[心智模型](https://www.zhihu.com/search?q=%E5%BF%83%E6%99%BA%E6%A8%A1%E5%9E%8B&search_source=Entity&hybrid_search_source=Entity&hybrid_search_extra=%7B%22sourceType%22%3A%22answer%22%2C%22sourceId%22%3A1125724740%7D)（Mental Model）。**我觉得很多同学只关注到了这两套 API 在功能上都能复用逻辑的相似点，而低估了两个框架体系「大背景」上的差异。
