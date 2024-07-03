@@ -16,20 +16,28 @@ tags:
 > 部分内容转自ChatGPT
 
 
-**不能，因为是很不一样的[心智模型](https://www.zhihu.com/search?q=%E5%BF%83%E6%99%BA%E6%A8%A1%E5%9E%8B&search_source=Entity&hybrid_search_source=Entity&hybrid_search_extra=%7B%22sourceType%22%3A%22answer%22%2C%22sourceId%22%3A1125724740%7D)（Mental Model）。**我觉得很多同学只关注到了这两套 API 在功能上都能复用逻辑的相似点，而低估了两个框架体系「大背景」上的差异。
+**不能，因为是很不一样的[心智模型](https://www.zhihu.com/search?q=%E5%BF%83%E6%99%BA%E6%A8%A1%E5%9E%8B&search_source=Entity&hybrid_search_source=Entity&hybrid_search_extra=%7B%22sourceType%22%3A%22answer%22%2C%22sourceId%22%3A1125724740%7D)（Mental Model）。**在网络规划中增加备用光纤存储器（例如，使用光纤通道（Fiber Channel）连接的存储区域网络（SAN））可以提高数据存储的性能、可靠性和可扩展性.
 
 正文开始前我先声明一下，
 
-1.  一是本文观点不代表公司。我是觉得圈子里不认同 Hooks 的声音太多了（比如 [@徐飞](//www.zhihu.com/people/c5198d4e9c0145aee04dd53cc6590edd) 叔叔、 [@贺师俊](//www.zhihu.com/people/3ec3b166992a5a90a1083945d2490d38) 贺老、 [@题叶](//www.zhihu.com/people/790dccce26904cdcd11b0fad3bac37b7) 同学等老朋友 no offensive），所以自愿出来平衡一下。
+1. 对部分网络结构细节并不太熟悉，欢迎大家务必指正、补充（与要求补充）；一是本文观点不代表公司。
 
-2.  二是我确实好久没有实际写前端了 ，React Hooks 实战还不多，Vue 3 只草草略读了 [Composition API RFC](https://link.zhihu.com/?target=https%3A//vue-composition-api-rfc.netlify.com/) 与之前中文的 [Vue Function-based API RFC](https://zhuanlan.zhihu.com/p/68477600)（所以对细节并不太熟悉。）欢迎大家务必指正、补充（与要求补充）。
-
-引言
+需求分析 
 --
 
-「框架/库是编程语言上的抽象」，并不意味着框架的设计就无法跳脱出其实现语言的习语（idioms）与编程范式（paradiams）。
+业务需求： 
 
-得益于 JavaScript 几个非常 Lisp 的特点：一等公民函数、动态类型、一定的宏支持（比如 Babel），这几年[前端框架](https://www.zhihu.com/search?q=%E5%89%8D%E7%AB%AF%E6%A1%86%E6%9E%B6&search_source=Entity&hybrid_search_source=Entity&hybrid_search_extra=%7B%22sourceType%22%3A%22answer%22%2C%22sourceId%22%3A1125724740%7D)的发展可以看到很多编程语言设计的思路：框架成为了由 DSL 与 API 构成的特定语法（syntax）、从 JavaScript 中扬弃以及由 API 附加的语义（semantics）、支撑这套体系运作的运行时（runtime）、以及所表达的心智模型（[mental model](https://www.zhihu.com/search?q=mental+model&search_source=Entity&hybrid_search_source=Entity&hybrid_search_extra=%7B%22sourceType%22%3A%22answer%22%2C%22sourceId%22%3A1125724740%7D)）的结合。
+确定需要存储的数据类型和容量。 
+
+评估存储性能需求，如读写速度和延迟要求。 
+
+确定数据备份和恢复要求。 
+
+预算和资源： 
+
+确定预算，包括存储设备、光纤通道交换机和光纤线缆等。 
+
+估算长期维护和扩展成本。 
 
 
 
