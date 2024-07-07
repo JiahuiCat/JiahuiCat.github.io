@@ -6,7 +6,6 @@ subtitle: "增加备用光纤存储器"
 author: "Hy.Alva"
 header-style: text
 tags:
-  - 知乎
   - 服务器虚拟化系统存储设备
   - 光纤存储器
   - 冗余
@@ -16,7 +15,7 @@ tags:
 > 部分内容转自ChatGPT
 
 
-**不能，因为是很不一样的[心智模型](https://www.zhihu.com/search?q=%E5%BF%83%E6%99%BA%E6%A8%A1%E5%9E%8B&search_source=Entity&hybrid_search_source=Entity&hybrid_search_extra=%7B%22sourceType%22%3A%22answer%22%2C%22sourceId%22%3A1125724740%7D)（Mental Model）。**在网络规划中增加备用光纤存储器（例如，使用光纤通道（Fiber Channel）连接的存储区域网络（SAN））可以提高数据存储的性能、可靠性和可扩展性.
+**[心智模型](https://www.zhihu.com/search?q=%E5%BF%83%E6%99%BA%E6%A8%A1%E5%9E%8B&search_source=Entity&hybrid_search_source=Entity&hybrid_search_extra=%7B%22sourceType%22%3A%22answer%22%2C%22sourceId%22%3A1125724740%7D)（Mental Model）。**在网络规划中增加备用光纤存储器（例如，使用光纤通道（Fiber Channel）连接的存储区域网络（SAN））可以提高数据存储的性能、可靠性和可扩展性.
 
 正文开始前我先声明一下，
 
