@@ -62,55 +62,6 @@ tags:
 
 *  确保线缆长度和质量满足需求。
 
-
-
-
-
-```ts
-const Counter = {
-  setup(initialProps) {
-    const count = reactive({count: 0}) // or `ref(0)`
-    const inc = () => { count.value++ }
-    return {count, inc}
-  }
-  template: "..."
-}
-```
-
-
-Vue 为组件挑选的语义是「对象」：Composition API 的`setup` 只会调用一次并返回一个对象合并到 `Counter` 组件上，这个对象与其成员全都是持久的引用，包括保存在 `inc` 闭包中的状态 `count` 也是持久的。渲染则是对组件上的`template` 域的具象化。
-
-Vue 附加的核心语义是（基于可变数据的）「响应式（reactive）」：状态 `count` 是一个响应式对象，`inc` 进行状态更改的方式是对 `count` 直接修改，状态更改的结果是执行所有观察者（watcher）的逻辑，包括重渲染和执行副作用（`watchEffect`) ，都是基于这个语义纳入数据流。
-
-有的同学（比如题主）说，如果改成返回一个 `render` 函数，**直接利用闭包来保存组件变量**，你还说这是对象的语义吗？
-
-```ts
-return (props) => <a onClick={inc}>{count.value}</a>
-```
-
-
-_是的_。Vue 的实现需要保持这个函数与其闭包的引用不变（referential identity）来满足状态被持久化的语义，是 JavaScript 用闭包模拟对象私有属性的经典模式[\[1\]](#ref_1)。（「闭包是穷人的对象，对象是穷人的闭包」）
-
-为了帮助你理解，如果我们有一门假想的 Vue 语言的话……
-
-```ts
-// hypothetical Vue lang
-component Counter (props) {    // constructor
-  @reactive count = 0          // field
-  inc() { count.value ++ }     // method
-  render() { return <a onClick={inc}>{count.value}</a> }
-}
-```
-
-
-是不是有基于类的 OOP 内味了？只不过 Vue 的对象是基于单例（或者闭包）而非类（或原型）实现，以及成员是被施过 reactive 魔法哒！这里我们展示了如何从概念上将 Vue 归约到 OOP 的心智模型，不过需要注意得是，Vue 整个体系（考虑状态管理、[数据流控制](https://www.zhihu.com/search?q=%E6%95%B0%E6%8D%AE%E6%B5%81%E6%8E%A7%E5%88%B6&search_source=Entity&hybrid_search_source=Entity&hybrid_search_extra=%7B%22sourceType%22%3A%22answer%22%2C%22sourceId%22%3A1125724740%7D)）的心智模型有很多 FP 的东西在里面，仍然和传统观念（比如 Java）的 OOP 有很大差别，[\[2\]](#ref_2)[\[3\]](#ref_3)。
-
-Vue 运行时的核心是 dependency tracking（依赖追踪），首先它使得 reactive 语义对用户相对 implicit（隐式），依赖都是自动收集的，大大降低了用户的心智负担。其次呢它非常细的跟踪粒度配合 Vue 使用静态化程度比较高模板使得重渲染自动就可以做到非常精准。
-
-总结起来，Vue 在组件方面的心智模型仍然是「拥有数据与行为且自响应式的对象」，只要照着这个思路去想，就比较好理解「为什么 Vue 的状态可以使用可变数据结构」、「为什么 Vue 需要`ref` 包装值类型」，以及 RFC 在对比 React Hooks 时提到的「为什么 Vue 更接近大家习惯的 JS 」（这点比较主观就是了）、「为什么 Vue 的 GC 压力会更小」、「为什么 Vue 不需要手动声明依赖」等优势的由来了。
-
-
-
 React, "Purely (Semi-Monadic/Algebraic) FP"
 -------------------------------------------
 
