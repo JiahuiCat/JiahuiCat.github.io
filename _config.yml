@@ -90,6 +90,7 @@ page-mathjax: false
 
 # Friends
 # friends:
+# friends标签是位于About me下方，隐藏了friends标签，如果有需要可以再次开启标签
 # [
 #   { title: "乱序（Midare）", href: "http://mida.re/" },
 #   { title: "Ebn Zhang", href: "https://ebnbin.dev/" },
