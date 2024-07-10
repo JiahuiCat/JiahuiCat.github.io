@@ -3,7 +3,7 @@ title: Hy.Alva Blog
 SEOTitle: Hy.Alva的博客 | hy.alva Blog
 header-img: img/home-bg.jpg
 email: hy.alva@outlook.com
-description: "这里是 hy.alva 的个人博客，让我们一起探讨电气世界和网络世界的奥秘，感受其中的奇妙与无限可能。"
+description: "这里是 hy.alva 的个人博客，让我们一起探讨电气和网络世界的奇妙，感受跨行业之间的无限可能。"
 keyword: "Information Technology, Web 3, Crypto "
 url: "https://JiahuiCat.github.io" # your host, for absolute URL
 baseurl: "" # for example, '/blog' if your blog hosted on 'host/blog'
@@ -74,7 +74,7 @@ ga_domain: huangxuan.me
 
 # Sidebar settings
 sidebar: true # whether or not using Sidebar.
-sidebar-about-description: "一个有趣的灵魂<br>志向成为合格的信息,电气攻城狮@ Alva"
+sidebar-about-description: "向着成为一名优秀的网络工程师和电气攻城狮而前进<br>@ Alva"
 sidebar-avatar: https://github.com/Huxpro.png # use absolute URL, seeing it's used in both `/` and `/about/`
 
 # Featured Tags
