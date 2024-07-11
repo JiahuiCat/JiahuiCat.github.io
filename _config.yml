@@ -78,7 +78,7 @@ sidebar-about-description: "向着成为一名优秀的网络工程师和电气�
 sidebar-avatar: https://github.com/Huxpro.png # use absolute URL, seeing it's used in both `/` and `/about/`
 
 # Featured Tags
-featured-tags: true # whether or not using Feature-Tags
+featured-tags: true # whether or not using Feature-Tags(是否需要开启侧边功能标签)
 featured-condition-size: 1 # A tag will be featured if the size of it is more than this condition value
 
 # Progressive Web Apps
