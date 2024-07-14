@@ -1,11 +1,17 @@
 ---
-layout: post
-title: "把「终端下的 Vim」作为 macOS Finder 的打开方式"
-subtitle: 'Open file with terminal Vim from the macOS Finder'
-author: "Hux"
+layout:post
+title:"量化金融学习路径总结笔记"
+subtitle:'量化金融'
+date:2024-07-14
+author: "Hy.Alva"
 header-style: text
 tags:
-  - Vim
+  - 量化金融
+  - 数学基础
+  - 金融理论
+  - 量化方法
+  - 实战
+  - 计算机科学基础
 ---
 
 我的日常主力编辑器主要是：
