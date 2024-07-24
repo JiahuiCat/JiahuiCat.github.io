@@ -4,8 +4,6 @@ title:      "量化金融学习路径总结笔记"
 subtitle:   "量化金融"
 date:       2024-07-14
 author:     "Hy.Alva"
-catalog: false
-published: false
 header-style: text
 tags:
   - 量化金融
